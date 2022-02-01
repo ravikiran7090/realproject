@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FullregressionTest">
+<listeners>
+<listener class-name="com.comcast.generalUtility.ListImp"></listener>
+</listeners>
+
+  <test thread-count="5" name="TestRunner-1">
+    <classes>
+      <class name="com.crm.comcast.orgTest.createOrgTest"/>
+      <class name="com.crm.comcast.contacttest.CreateContactTest"/>
+    </classes>
+  </test> <!-- TestRunner-1 -->
+</suite> <!-- FullregressionTest -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testng]">
+  <test thread-count="5" name="fullregression(failed)">
+    <classes>
+      <class name="com.crm.comcast.contacttest.CreateContactTest">
+        <methods>
+          <include name="CreateContactTest"/>
+          <include name="configAS"/>
+          <include name="configAc"/>
+          <include name="configBS"/>
+          <include name="configBc"/>
+          <include name="createContactWithOrgTest"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+        </methods>
+      </class> <!-- com.crm.comcast.contacttest.CreateContactTest -->
+      <class name="com.crm.comcast.orgTest.createOrgTest">
+        <methods>
+          <include name="configAS"/>
+          <include name="configAc"/>
+          <include name="createOrgTest"/>
+          <include name="configBS"/>
+          <include name="configBc"/>
+          <include name="createOrgWithindustytest"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+        </methods>
+      </class> <!-- com.crm.comcast.orgTest.createOrgTest -->
+    </classes>
+  </test> <!-- fullregression(failed) -->
+</suite> <!-- Failed suite [testng] -->

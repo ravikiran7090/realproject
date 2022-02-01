@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.comcast.generalUtility.ListImp"/>
+  </listeners>
+  <test thread-count="2" name="Testrunner1(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.comcast.orgTest.createOrgTest">
+        <methods>
+          <include name="configAS"/>
+          <include name="configAc"/>
+          <include name="createOrgTest"/>
+          <include name="configBS"/>
+          <include name="configBc"/>
+          <include name="createOrgWithindustytest"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+        </methods>
+      </class> <!-- com.crm.comcast.orgTest.createOrgTest -->
+    </classes>
+  </test> <!-- Testrunner1(failed) -->
+  <test thread-count="2" name="Testrunner2(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.comcast.orgTest.createOrgTest">
+        <methods>
+          <include name="configAS"/>
+          <include name="configAc"/>
+          <include name="createOrgTest"/>
+          <include name="configBS"/>
+          <include name="configBc"/>
+          <include name="createOrgWithindustytest"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+        </methods>
+      </class> <!-- com.crm.comcast.orgTest.createOrgTest -->
+    </classes>
+  </test> <!-- Testrunner2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
